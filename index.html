@@ -316,7 +316,7 @@
                     </div>
                 </div>
                 <!-- Information -->
-                <div class="grid col-span-2">
+                <div class="grid col-span-2 justify-start mb-96">
                     <div>
                         <h2 class="text-xl font-bold">Select Your Seat</h2>
                         <hr class="border-dashed m-5">
@@ -337,44 +337,48 @@
                             <h3>BDT  <span id="total-cost">0</span></h3>
                         </div>
                         <div class="text-center mt-8 mb-5">
-                            <input id="input-coupon" type="text" class="px-10 py-2">
+                            <input id="input-coupon" type="text" class="px-8 py-2">
                             <button id="apply-btn" class="bg-[#1DD100]  text-white  rounded-md px-5 py-2">Apply</button>
                         </div>
                         <div id="hidden-element" class="flex justify-between mr-12 hidden">
                             <h3>Discount</h3>
                             <h3>BDT <span id="total-discount">0</span></h3>
                         </div>
-                        <div class="flex justify-between mr-12">
+                        <div class="flex justify-between mr-10">
                             <h3>Grand Total</h3>
                             <h3>BDT <span id="grand-total">0</span></h3>
                         </div>
+                        <button id="next-btn" onclick="my_modal_5.showModal()" class="btn border-none rounded-lg bg-[#1DD100] text-xl text-white px-14 w-full font-extrabold mt-6">Next</button> 
+                        <div class="flex justify-between mt-5">
+                            <p class="underline">Terms and conditions</p>
+                            <p class="underline">Cancellation Policy</p>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-1">
+                    
+                    <!-- <div class="grid grid-cols-1">
                         <label class="form-control mb-1 max-w-xs">
                             <div class="label">
                               <span class="label-text font-bold">Passenger Name*</span>
                             </div>
-                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+                            <input id="name-input" type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
                         </label>
                         <label class="form-control mb-1 max-w-xs">
                             <div class="label">
                               <span class="label-text font-bold">Phone Number*</span>
                             </div>
-                            <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+                            <input id="number-input" type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
                         </label>
                         <label class="form-control mb-1 max-w-xs">
                             <div class="label">
                               <span class="label-text font-bold">Email ID</span>
                             </div>
-                            <input type="email" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
+                            <input id="email-input" type="email" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
                         </label>
+                         
                         
-                    </div>
-                    <button id="next-btn" onclick="my_modal_5.showModal()" class="btn border-none rounded-lg bg-[#1DD100] text-xl text-white px-14 font-extrabold">Next</button>
-                    <div class="flex justify-evenly mt-0">
-                        <p class="underline">Terms and conditions</p>
-                        <p class="underline">Cancellation Policy</p>
-                    </div>
+                    </div> -->
+                    
+                    
                 </div>
             </div>
             </section>
@@ -406,10 +410,11 @@
         We are working hard to find the best service and deals for you. <br></span>
         Shortly you will find a confirmation in your email.</p>
     
-    <div class="modal-action">
+    <div class="modal-action text-center">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button id="continue" class="btn border-none rounded-s- bg-[#1DD100] text-xl text-white px-14 font-extrabold">Continue</button>
+        <button id="continue" class="border-none rounded-full bg-[#1DD100] text-xl text-white px-14 py-3 font-bold mr-[180px]">Continue</button>
+
       </form>
     </div>
 </div>
