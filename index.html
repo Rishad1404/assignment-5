@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-raleway">
+<body id="full-body" class="font-raleway font-inter">
     <header class="container mx-auto my-12">
         <!-- Navigation Bar -->
         <nav>
@@ -42,7 +42,7 @@
               </div>
         </nav>
     </header>
-
+<!-- main Part -->
     <main>
         
         <!-- Banner Section -->
@@ -140,7 +140,7 @@
                             </div>
                             <div>
                                 <button class="btn bg-[#1DD100] bg-opacity-10 border-[#1DD10066] text-[#1DD100]"><img src="images/seat-green.png" alt=""> 
-                                    <span>40 Seats left</span><button>
+                                    <span class="total-seats"><span id="decreasing-seats">40</span> Seats left</span><button>
                             </div>
 
                         </div>
@@ -205,111 +205,111 @@
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="A">A</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>A1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>A2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>A1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>A2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>A3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>A4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>A3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>A4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="B">B</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>B1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>B2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>B1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>B2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>B3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>B4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>B3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>B4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="C">C</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>C1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>C2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>C1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>C2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>C3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>C4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>C3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>C4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="D">D</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>D1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>D2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>D1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>D2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>D3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>D4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>D3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>D4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="E">E</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>E1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>E2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>E1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>E2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>E3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>E4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>E3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>E4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="F">F</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>F1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>F2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>F1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>F2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>F3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>F4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>F3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>F4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="G">G</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>G1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>G2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>G1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>G2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>G3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>G4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>G3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>G4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="H">H</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>H1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>H2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>H1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>H2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>H3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>H4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>H3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>H4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="I">I</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>I1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>I2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>I1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>I2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>I3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>I4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>I3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>I4</p></button>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between mt-10">
                                 <div class="flex gap-10 items-center">
                                     <label for="J">J</label>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>J1</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>J2</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>J1</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>J2</p></button>
                                 </div>
                                 <div class="flex gap-10">
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>J3</span></button>
-                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><span>J4</span></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>J3</p></button>
+                                    <button class="btn bg-[#F7F8F8] px-14 seat-button"><p>J4</p></button>
                                 </div>
                             </div>
                         </div>
@@ -321,30 +321,32 @@
                         <h2 class="text-xl font-bold">Select Your Seat</h2>
                         <hr class="border-dashed m-5">
                     </div>
-                    <div  class="bg-[#F7F8F8] p-6 mb-10">
+                    <div  class="bg-[#F7F8F8] p-6 mb-1">
                         <div class="grid gap-28 grid-cols-3">
-                            <p><span>Seat <span class="bg-[#1DD100] hidden">0</span></span></p>
+                            <p><span>Seat <span id="increasing-seats" class="bg-[#1DD100] p-1">0</span></span></p>
                             <p><span>Class</span></p>
                             <p><span>Price</span></p>
                         </div>
                         <hr class="border-dashed m-5">
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div id="selected-seat" class="grid grid-cols-3 gap-x-32 font-semibold">
+                            
                         </div>
-                        <hr class="border-dotted">
+                        <hr class="border-dotted mb-5">
                         <div class="flex justify-between mr-12">
                             <h3>Total Price</h3>
-                            <h3>BDT <span>0</span></h3>
+                            <h3>BDT  <span id="total-cost">0</span></h3>
                         </div>
                         <div class="text-center mt-8 mb-5">
-                            <input type="text" class="px-10 py-2">
-                            <button class="bg-[#1DD100]  text-white  rounded-md px-5 py-2">Apply</button>
+                            <input id="input-coupon" type="text" class="px-10 py-2">
+                            <button id="apply-btn" class="bg-[#1DD100]  text-white  rounded-md px-5 py-2">Apply</button>
+                        </div>
+                        <div id="hidden-element" class="flex justify-between mr-12 hidden">
+                            <h3>Discount</h3>
+                            <h3>BDT <span id="total-discount">0</span></h3>
                         </div>
                         <div class="flex justify-between mr-12">
                             <h3>Grand Total</h3>
-                            <h3>BDT <span>0</span></h3>
+                            <h3>BDT <span id="grand-total">0</span></h3>
                         </div>
                     </div>
                     <div class="grid grid-cols-1">
@@ -376,8 +378,24 @@
                 </div>
             </div>
             </section>
+
+            
         </section>
+            <!-- Modal part -->
+        
     </main>
+    <div id="modal-part" class="my-10 rounded-md bg-[#F2F1F1] w-[721px] h-[418px] px-3 text-center ml-[30%] hidden">
+        <div class="p-20  w-[718px] h-[481px] grid grid-row-4">
+            <img class="ml-[225px]" src="images/success.png" alt="">
+            <h3 class="text-[#27AE60] mt-2 mb-1">SUCCESS</h3>
+            <p><span class="font-bold">Thank you for Booking Our Bus Seats. 
+                We are working hard to find the best service and deals for you. <br></span>
+                Shortly you will find a confirmation in your email.</p>
+            <button id="continue" class="btn border-none rounded-s- bg-[#1DD100] text-xl text-white px-14 font-extrabold">Continue</button>
+        </div>
+    </div>
+
+    
      <!-- Footer -->
     <footer class="bg-black p-[150px] text-white">
 
@@ -405,6 +423,7 @@
         </div>
 
       </footer>
+      <script src="javascript/others.js"></script>
       <script src="javascript/javascript1.js"></script>
 </body>
 </html>
