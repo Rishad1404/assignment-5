@@ -15,13 +15,14 @@ for(const button of buttons){
     // console.log(element)
     button.addEventListener('click',function(){
         // console.log('clicked')
-        
+        showElementById('increasing-seats');
         // Button Background Color
         button.style.backgroundColor='#1DD100';
         
         if(count>=4){
             button.style.backgroundColor='#F7F8F8';
             alert('You cannot select more than 4 seats!');
+            p.innerText="";
         }   
 
         // Append in the calculation Div
@@ -41,7 +42,6 @@ for(const button of buttons){
         p2.innerText='550';
         titleContainer.appendChild(p2)
 
-        
         
         
 
@@ -101,6 +101,8 @@ btn.addEventListener('click',function(){
         
     
 })
+
+
 
 
 
